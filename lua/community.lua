@@ -15,6 +15,7 @@ return {
   { import = "astrocommunity.pack.lean" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.biome" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   --
   -- AI Companion setup
   { import = "astrocommunity.recipes.ai" },
@@ -28,19 +29,18 @@ return {
   -- Break bad habbits and workflows
   { import = "astrocommunity.workflow.hardtime-nvim" },
   -- Windows
-  {
-    import = "astrocommunity.split-and-window.neominimap-nvim",
-    init = function()
-      vim.print "here im here"
-      -- The following options are recommended when layout == "float"
-      vim.opt.wrap = false
-      vim.opt.sidescrolloff = 36 -- Set a large value
-
-      --- Put your configuration here
-      ---@type Neominimap.UserConfig
-      vim.g.neominimap = {
-        auto_enable = false,
-      }
-    end,
-  },
+  -- {
+  --   import = "astrocommunity.split-and-window.neominimap-nvim",
+  --   init = function()
+  --     -- The following options are recommended when layout == "float"
+  --     vim.opt.wrap = false
+  --     vim.opt.sidescrolloff = 36 -- Set a large value
+  --
+  --     --- Put your configuration here
+  --     ---@type Neominimap.UserConfig
+  --     vim.g.neominimap = {
+  --       auto_enable = false,
+  --     }
+  --   end,
+  -- },
 }
